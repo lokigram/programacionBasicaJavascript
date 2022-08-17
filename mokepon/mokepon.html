@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>MOKEPON</title>
-    <script src="./js/mokepon.js"></script>
+    <style  ></style>
 </head>
 <body>
-    <section>
+    <main>
         <h1>MOKEPON! 🔥💧🌱</h1>
-        <section id="seleccionar-mascota">
+        <article id="seleccionar-mascota">
             <h2>Elige tu mascota:</h2>
+
+            <div id="tarjeta">
             <!-- Hipodoge
             Capipepo
             Ratigueya -->
-            <label for="hipodoge">Hipodoge</label>
-            <input type="radio" name="moquepon" id="hipodoge">
-            <label for="capipepo">Capipepo</label>
-            <input type="radio" name="moquepon" id="capipepo">
-            <label for="ratigueya">Ratigueya</label>
-            <input type="radio" name="moquepon" id="ratigueya">
-            <button id="boton-mascota-jugador">Seleccionar</button>
-        </section>
-        <section id="seleccionar-ataque">
-            <h2>Elige tu ataque:</h2>
+            </div>
 
-            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>La mascota del enemigo <span id="mascota-enemigo"></span> tienen <span id="vidas-enemigo">3</span> vidas</p>
-            <p>
-                <button id="boton-ataque-fuego">Fuego🔥</button>
-                <button id="boton-ataque-agua">Agua💧</buttonid>
-                <button id="boton-ataque-tierra">Tierra🌱</button>
-            </p>
-        </section>
-        <section id="mensaje">
-        </section>
-        <section id="mensaje-final">
-        </section>
-        <section id="reiniciar">
-            <button id="boton-reiniciar-juego">Reiniciar</button>
-        </section>
-        
-    </section>
+            <button id="boton-mascota-jugador">Seleccionar</button>
+        </article>
+        <article id="seleccionar-ataque">
+            <h2>Elige tu ataque:</h2>
+            
+            <div id="contenedor-ataques">
+                <!-- boton agua
+                boton fuego
+                boton tierra -->
+            </div>
+            <section id="mensaje">
+                <p id="resultado">MUCHA SUERTE</p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar-juego">Reiniciar</button>
+                </section>
+                
+            </section>
+            <section>
+                <div id="mensaje-ataque-jugador">
+                    <span id="vidas-jugador">3</span>
+                    <span id="mascota-jugador"></span>
+                </div>
+                <div id="mensaje-ataque-enemigo">
+                    <span id="vidas-enemigo">3</span>
+                    <span id="mascota-enemigo"></span>
+            </section>
+        </article>        
+    </main>
+    <script src="./js/mokepon.js"></script>
 </body>
 </html>
