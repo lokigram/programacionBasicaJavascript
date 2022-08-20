@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>MOKEPON</title>
-    <style  ></style>
-</head>
+    <link rel="stylesheet" href="style.css">
 <body>
+    <header class="cabecera">
+        <h1 class="titulo">MOKEPON! 🔥💧🌱</h1>
+    </header>
     <main>
-        <h1>MOKEPON! 🔥💧🌱</h1>
+        
         <article id="seleccionar-mascota">
-            <h2>Elige tu mascota:</h2>
-
-            <div id="tarjeta">
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+            <div id="tarjetas">
             <!-- Hipodoge
             Capipepo
             Ratigueya -->
             </div>
-
             <button id="boton-mascota-jugador">Seleccionar</button>
         </article>
+
         <article id="seleccionar-ataque">
             <h2>Elige tu ataque:</h2>
             
-            <div id="contenedor-ataques">
+            <section id="contenedor-ataques">
                 <!-- boton agua
                 boton fuego
                 boton tierra -->
-            </div>
+            </section>
             <section id="mensaje">
                 <p id="resultado">MUCHA SUERTE</p>
-                <section id="reiniciar">
+                <div id="reiniciar">
                     <button id="boton-reiniciar-juego">Reiniciar</button>
-                </section>
-                
+                </div>
             </section>
             <section>
                 <div id="mensaje-ataque-jugador">
@@ -43,8 +43,11 @@
                     <span id="vidas-enemigo">3</span>
                     <span id="mascota-enemigo"></span>
             </section>
-        </article>        
+        </article>  
+
     </main>
+    <aside></aside>
+    <footer></footer>
     <script src="./js/mokepon.js"></script>
 </body>
 </html>
